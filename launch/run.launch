@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find one_dof)/launch/dynamixel_manager.launch"/>
+    <include file="$(find one_dof)/launch/position.launch"/>
+</launch>
