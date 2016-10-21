@@ -4,14 +4,15 @@ Shoot me a message on Facebook or give me a call if you have any questions! - br
 
 # workspace setup
 I've only run the dynamixels on my laptop so far, so none of this has been set up on the desktop yet. If you want to run the 1-dof and I haven't gotten around to setting stuff up, doing so should be a pretty straightforward process:
+
 1. Open a terminal
 2. Install the dynamixel stack & rqt_ez_publisher, which we'll use for publishing commands to the dynamixel
  - `sudo apt-get install -y ros-indigo-dynamixel-motor ros-indigo-rqt-ez-publisher`
  - `rm ~/.config/ros.org/rqt_gui.ini`
 3.  create a catkin workspace
-- ``mkdir -p ~/onedof_workspace/src``
-- ``cd ~/onedof_workspace/src``
-- ``catkin_init_workspace``
+ - ``mkdir -p ~/onedof_workspace/src``
+ - ``cd ~/onedof_workspace/src``
+ - ``catkin_init_workspace``
 4. Clone this package into the workspace's source directory
  - ``cd ~/onedof_workspace/src``
  - ``git clone https://github.com/brentyi/one_dof.git``
